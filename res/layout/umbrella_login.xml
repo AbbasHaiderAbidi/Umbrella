@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFD8DC"
+    android:gravity="top" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="153dp" >
+
+        <ImageView
+            android:id="@+id/em"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/namefield" />
+
+        <EditText
+            android:id="@+id/email1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:ems="10"
+            android:gravity="bottom"
+            android:hint="abc@xyz.com"
+            android:inputType="textEmailAddress" >
+
+            <requestFocus />
+        </EditText>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frameLayout1"
+        android:layout_below="@+id/frameLayout1"
+        android:layout_marginTop="44dp" >
+
+        <ImageView
+            android:id="@+id/ps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/frameLayout1"
+            android:src="@drawable/namefield" />
+
+        <EditText
+            android:id="@+id/Passcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:ems="10"
+            android:gravity="bottom"
+            android:hint="Passcode"
+            android:inputType="textPassword" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/frameLayout1"
+        android:layout_alignLeft="@+id/frameLayout1"
+        android:layout_marginBottom="54dp"
+        android:text="Enter your ID:" />
+
+    <TextView
+        android:id="@+id/tvps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frameLayout2"
+        android:layout_below="@+id/frameLayout1"
+        android:layout_marginTop="22dp"
+        android:text="Enter your Passcode: " />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvem"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/frameLayout2"
+        android:layout_below="@+id/frameLayout2"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/logoshad" />
+
+    <CheckBox
+        android:id="@+id/stayLoggedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frameLayout2"
+        android:layout_below="@+id/frameLayout2"
+        android:text="Stay Logged In" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/login"
+        android:gravity="center"
+        android:text="" />
+
+</RelativeLayout>
